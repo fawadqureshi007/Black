@@ -112,7 +112,7 @@ def print_logo():
 """ + NEON_RESET
     print(logo)
     print(f"{NEON_BOLD_GREEN}=== DARKNET OSINT RECON PROBE v4.0 ==={NEON_RESET}\n")
-    print(f"{NEON_BOLD_YELLOW}Creator: Tech Enthusiast | Code your fate... or someone will.{NEON_RESET}\n")
+    print(f"{NEON_BOLD_YELLOW}Creator: H4CKER_FAWAD | Think like an attacker..{NEON_RESET}\n")
 
 def print_menu():
     print(f"{NEON_BOLD_CYAN}:: SECTION ONE - SCAN OPS & RECON ::{NEON_RESET}\n")
