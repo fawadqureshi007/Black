@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="assets/BlackTrace.png" width="600"/>
+</p>
+
+<h1 align="center">🕶️ BlackTrace</h1>
+
+<p align="center">
+  H4CKER_FAWAD | Break systems. Understand everything.
+</p>
 # 🕶️ BlackTrace
 
 ### Advanced OSINT Reconnaissance Framework
