@@ -7,7 +7,7 @@
 <p align="center">
   H4CKER_FAWAD | Think like an attacker.
 </p>
-# 🕶️ BlackTrace
+#  BlackTrace
 
 ### Advanced OSINT Reconnaissance Framework
 
