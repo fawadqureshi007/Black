@@ -5,7 +5,7 @@
 <h1 align="center">🕶️ BlackTrace</h1>
 
 <p align="center">
-  H4CKER_FAWAD | Break systems. Understand everything.
+  H4CKER_FAWAD | Think like an attacker.
 </p>
 # 🕶️ BlackTrace
 
