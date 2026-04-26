@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+waybackpy
+spacy
+phonenumbers
+exifread
+tldextract
+python-whois
+dnspython
