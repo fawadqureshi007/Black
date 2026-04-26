@@ -1,7 +1,6 @@
+# 🕶️ BlackTrace
 
-````md
-# 🕶️ BlackTrace  
-### Darknet OSINT Recon Probe
+### Advanced OSINT Reconnaissance Framework
 
 ```bash
 ██████╗ ██╗      █████╗  ██████╗██╗  ██╗████████╗██████╗  █████╗  ██████╗███████╗
@@ -10,51 +9,53 @@
 ██╔══██╗██║     ██╔══██║██║     ██╔═██╗    ██║   ██╔══██╗██╔══██║██║     ██╔══╝  
 ██████╔╝███████╗██║  ██║╚██████╗██║  ██╗   ██║   ██║  ██║██║  ██║╚██████╗███████╗
 ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
-````
+```
 
-> ⚡ Stay concealed. Trace everything.
+> ⚡ “Trace data. Extract intelligence. Stay unseen.”
 
 ---
 
 ## 📌 Overview
 
-BlackTrace is an advanced **Open Source Intelligence (OSINT) toolkit** built in Python for cybersecurity research, digital investigations, and reconnaissance operations.
+**BlackTrace** is a modular Open Source Intelligence (OSINT) framework designed for cybersecurity research, digital investigations, and reconnaissance automation.
 
-It provides a unified CLI interface combining multiple intelligence-gathering techniques into one powerful framework.
+It combines multiple intelligence-gathering techniques into a single CLI-based toolkit for ethical security analysis.
 
 ---
 
 ## 🚀 Features
 
-* 📍 Image GPS extraction (EXIF analysis)
-* 🌐 Username search across 30+ platforms
-* 📧 Email breach detection & paste search
-* 🔎 Email verification via OSINT APIs
+* 📍 Image EXIF GPS extraction
+* 🌐 Username reconnaissance (multi-platform)
+* 📧 Email breach & paste leak detection
+* 🔎 Email verification (OSINT validation)
 * 🌍 WHOIS, DNS & subdomain enumeration
-* 📂 Metadata extraction from files
-* 🧠 Google Dorking automation
-* 🕰️ Wayback Machine historical lookup
-* 🌐 IP geolocation & abuse check
-* 📊 Website scraping with NLP entity extraction
-* 📱 Phone number intelligence
+* 📂 File metadata extraction
+* 🧠 Automated Google Dorking
+* 🕰️ Wayback Machine historical analysis
+* 🌐 IP geolocation & abuse intelligence
+* 📊 Website scraping + entity extraction (NLP)
+* 📱 Phone number intelligence lookup
 * 🖼️ Reverse image search (multi-engine)
-* 🛰️ GEOINT (Maps + Satellite analysis)
+* 🛰️ GEOINT (maps + satellite analysis)
 * 📡 Port scanning & network reconnaissance
-* 🧠 Threat intelligence feeds
+* 🧠 Threat intelligence feeds integration
+* 🧾 Reddit / GitHub intelligence modules
 
 ---
 
-## ⚙️ Prerequisites
+## ⚙️ Requirements
 
 * Python 3.7+
-* pip package manager
+* pip
 * Internet connection
+* Kali Linux / Ubuntu recommended
 
 ---
 
-## 🧪 Installation
+## 📦 Installation
 
-### 🔧 Quick Install (Recommended)
+### 🔧 Quick Setup
 
 ```bash
 git clone https://github.com/fawadqureshi007/Black.git
@@ -65,32 +66,48 @@ chmod +x install.sh
 
 ---
 
-### 🛠️ Manual Install
+### 🛠️ Manual Setup
 
 ```bash
 sudo apt update
 
-python -m venv blacktrace_env
+python3 -m venv blacktrace_env
 source blacktrace_env/bin/activate
 
 pip install -r requirements.txt
 
-python -m spacy download en_core_web_sm
+python3 -m spacy download en_core_web_sm
 ```
 
 ---
 
-## ▶️ Run Tool
+## ▶️ Usage
+
+### Standard Run (Recommended)
 
 ```bash
-python blacktrace.py
+python3 blacktrace.py
 ```
-
-> ⚠️ If `python` does not work, use `python3`.
 
 ---
 
-## 📦 requirements.txt
+### 🔧 Advanced Run (No activation required)
+
+```bash
+./blacktrace_env/bin/python blacktrace.py
+```
+
+---
+
+### ⚡ One-Click Execution (Best)
+
+```bash
+./run.sh
+```
+
+---
+
+## 📄 requirements.txt
 
 ```
 requests
@@ -102,46 +119,20 @@ exifread
 tldextract
 python-whois
 dnspython
+lxml
 ```
 
 ---
 
-## 🧠 Modules
+## 🔑 API Keys (Optional Modules)
 
-| #  | Module              | Description             |
-| -- | ------------------- | ----------------------- |
-| 1  | Image GeoLocation   | Extract GPS from images |
-| 2  | Social Recon        | Username tracking       |
-| 3  | Email Breach Scan   | Leak detection          |
-| 4  | Email Verification  | Email validation        |
-| 5  | Domain Intelligence | WHOIS + DNS             |
-| 6  | Metadata Extraction | Hidden file data        |
-| 7  | Google Dorking      | Advanced search         |
-| 8  | Instagram Recon     | Profile analysis        |
-| 9  | Port Scanner        | Network scanning        |
-| 10 | GitHub Recon        | Developer profiling     |
-| 11 | Website Scraper     | Metadata extraction     |
-| 12 | Phone Intel         | Carrier & geo lookup    |
-| 13 | Reverse Image       | Image OSINT             |
-| 14 | GEOINT Ops          | Satellite mapping       |
-| 15 | Wayback Analysis    | Historical pages        |
-| 16 | IP Intelligence     | Abuse reports           |
-| 17 | Threat Feeds        | Cyber threat data       |
-| 18 | Reddit Recon        | Community intelligence  |
-| 19 | Bug Report          | Issue reporting         |
-| 20 | Exit                | Safe shutdown           |
-
----
-
-## 🔑 API Setup
-
-Some modules require API keys:
+Some features require external APIs:
 
 * HaveIBeenPwned → [https://haveibeenpwned.com/API/Key](https://haveibeenpwned.com/API/Key)
 * Hunter.io → [https://hunter.io](https://hunter.io)
 * AbuseIPDB → [https://www.abuseipdb.com/api](https://www.abuseipdb.com/api)
 
-### Set keys:
+### Set environment variables:
 
 ```bash
 export HIBP_API_KEY="your_key"
@@ -151,35 +142,58 @@ export GITHUB_TOKEN="your_token"
 
 ---
 
+## 🧠 Modules Overview
+
+| #  | Module              | Description                |
+| -- | ------------------- | -------------------------- |
+| 1  | Image GeoLocation   | Extract GPS metadata       |
+| 2  | Social Recon        | Username search            |
+| 3  | Email Breach Scan   | Data leak detection        |
+| 4  | Email Verification  | Email validation           |
+| 5  | Domain Intelligence | WHOIS + DNS lookup         |
+| 6  | Metadata Extraction | File intelligence          |
+| 7  | Google Dorking      | Advanced search automation |
+| 8  | Instagram Recon     | Profile analysis           |
+| 9  | Port Scanner        | Network reconnaissance     |
+| 10 | GitHub Recon        | Developer profiling        |
+| 11 | Website Scraper     | Metadata extraction        |
+| 12 | Phone Intelligence  | Carrier & region lookup    |
+| 13 | Reverse Image       | Image OSINT                |
+| 14 | GEOINT Ops          | Satellite mapping          |
+| 15 | Wayback Analysis    | Historical recon           |
+| 16 | IP Intelligence     | Abuse & blacklist checks   |
+| 17 | Threat Feeds        | Cyber threat intel         |
+| 18 | Reddit Recon        | Community intelligence     |
+
+---
+
 ## ⚖️ Ethical Use
 
 ✔ Allowed:
 
-* Educational use
-* Security research
+* Educational purposes
+* Cybersecurity research
 * Authorized penetration testing
 
 ❌ Not allowed:
 
 * Unauthorized tracking
 * Privacy invasion
-* Illegal activities
+* Illegal activity
 
 ---
 
 ## 🛡️ Disclaimer
 
-This tool is for **educational and authorized security testing only**.
+This tool is intended for **educational and authorized security testing only**.
 The developer is not responsible for misuse.
 
 ---
 
 ## 👤 Author
 
-**Fawad Qureshi--**
-📸 Instagram: 
-[https://www.instagram.com/h4cker_fawad/](https://www.instagram.com/h4cker_fawad/)
-
+**Fawad Qureshi**
+📸 Instagram: [https://www.instagram.com/h4cker_fawad](https://www.instagram.com/h4cker_fawad)
 
 ---
 
@@ -187,8 +201,8 @@ The developer is not responsible for misuse.
 
 If you like this project:
 
-* ⭐ Star the repo
+* ⭐ Star the repository
 * 🍴 Fork it
-* 🚀 Share it with cybersecurity community
+* 🚀 Share with cybersecurity community
 
-
+---
